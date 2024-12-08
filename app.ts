@@ -4,7 +4,6 @@ import { ThrotleRulesService } from "./throttle-rule-service.js";
 import { UserIdentificationService } from "./user-identification-service.js";
 
 
-// Main function similar to the Java version
 async function main() {
   let rule: ThrotleRule = new ThrotleRule(Bucket_Capacity, Refilling_Capacity);
   let throtleRulesService: ThrotleRulesService = ThrotleRulesService.getInstance();
